@@ -1,0 +1,6 @@
+[
+  { "id": "second", "name": "Second", "host": "ark.second.tech" },
+  { "id": "second-signet", "name": "Second (signet)", "host": "ark.signet.2nd.dev" },
+  { "id": "coinos", "name": "Coinos", "host": "ark.coinos.io" },
+  { "id": "zappin", "name": "Zappin", "host": "ark.zappin.online" }
+]

@@ -1,0 +1,12 @@
+# Deploys are pushed from GitHub Actions (.github/workflows/probe.yml) after
+# each probe run, so Netlify should not build on its own. If the site is ever
+# linked to the repo, this skips those builds.
+[build]
+  publish = ".output/public"
+  ignore = "exit 0"
+
+[[headers]]
+  for = "/servers.json"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=60"

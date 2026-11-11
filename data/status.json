@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-11T15:22:09.000Z",
+  "checkIntervalSecs": 600,
+  "servers": [
+    {
+      "id": "second",
+      "name": "Second",
+      "host": "ark.second.tech",
+      "state": "unknown",
+      "lastCheckedAt": null,
+      "lastOnlineAt": null,
+      "latencyMs": null,
+      "error": null,
+      "uptime": {
+        "h24": {
+          "pct": null,
+          "checks": 0,
+          "since": null
+        },
+        "d7": {
+          "pct": null,
+          "checks": 0,
+          "since": null
+        },
+        "d30": {
+          "pct": null,
+          "checks": 0,
+          "since": null
+        }
+      },
+      "info": null,
+      "infoObservedAt": null
+    },
+    {
+      "id": "second-signet",
+      "name": "Second (signet)",
+      "host": "ark.signet.2nd.dev",
+      "state": "unknown",
+      "lastCheckedAt": null,
+      "lastOnlineAt": null,
+      "latencyMs": null,
+      "error": null,
+      "uptime": {
+        "h24": {
+          "pct": null,
+          "checks": 0,
+          "since": null
+        },
+        "d7": {
+          "pct": null,
+          "checks": 0,
+          "since": null
+        },
+        "d30": {
+          "pct": null,
+          "checks": 0,
+          "since": null
+        }
+      },
+      "info": null,
+      "infoObservedAt": null
+    },
+    {
+      "id": "coinos",
+      "name": "Coinos",
+      "host": "ark.coinos.io",
+      "state": "unknown",
+      "lastCheckedAt": null,
+      "lastOnlineAt": null,
+      "latencyMs": null,
+      "error": null,
+      "uptime": {
+        "h24": {
+          "pct": null,
+          "checks": 0,
+          "since": null
+        },
+        "d7": {
+          "pct": null,
+          "checks": 0,
+          "since": null
+        },
+        "d30": {
+          "pct": null,
+          "checks": 0,
+          "since": null
+        }
+      },
+      "info": null,
+      "infoObservedAt": null
+    },
+    {
+      "id": "zappin",
+      "name": "Zappin",
+      "host": "ark.zappin.online",
+      "state": "unknown",
+      "lastCheckedAt": null,
+      "lastOnlineAt": null,
+      "latencyMs": null,
+      "error": null,
+      "uptime": {
+        "h24": {
+          "pct": null,
+          "checks": 0,
+          "since": null
+        },
+        "d7": {
+          "pct": null,
+          "checks": 0,
+          "since": null
+        },
+        "d30": {
+          "pct": null,
+          "checks": 0,
+          "since": null
+        }
+      },
+      "info": null,
+      "infoObservedAt": null
+    }
+  ]
+}

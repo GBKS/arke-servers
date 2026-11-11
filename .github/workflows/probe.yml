@@ -1,0 +1,66 @@
+name: Probe and deploy
+
+on:
+  schedule:
+    # Keep in sync with CHECK_INTERVAL_SECS in scripts/probe.ts.
+    # GitHub may delay scheduled runs by several minutes under load.
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ['data/**']
+
+concurrency:
+  group: probe
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Test
+        if: github.event_name == 'push'
+        run: npm test
+
+      - name: Probe servers
+        run: npm run probe
+
+      - name: Commit results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m 'Update server status'
+          for i in 1 2 3; do
+            git pull -q --rebase && git push -q && exit 0
+            sleep 5
+          done
+          exit 1
+
+      - name: Build site
+        run: npm run generate
+
+      - name: Deploy to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          if [ -z "$NETLIFY_AUTH_TOKEN" ] || [ -z "$NETLIFY_SITE_ID" ]; then
+            echo 'Netlify secrets not set, skipping deploy.'
+            exit 0
+          fi
+          npx --yes netlify-cli@27.17.0 deploy --prod --no-build --dir .output/public --message "Status $(date -u +%FT%TZ)"
