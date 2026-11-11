@@ -1,123 +1,470 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-11T15:22:09.000Z",
+  "generatedAt": "2026-11-11T15:34:25.000Z",
   "checkIntervalSecs": 600,
   "servers": [
     {
       "id": "second",
       "name": "Second",
       "host": "ark.second.tech",
-      "state": "unknown",
-      "lastCheckedAt": null,
-      "lastOnlineAt": null,
-      "latencyMs": null,
+      "state": "online",
+      "lastCheckedAt": "2026-11-11T15:34:23.000Z",
+      "lastOnlineAt": "2026-11-11T15:34:23.000Z",
+      "latencyMs": 544,
       "error": null,
       "uptime": {
         "h24": {
-          "pct": null,
-          "checks": 0,
-          "since": null
+          "pct": 100,
+          "checks": 1,
+          "since": "2026-11-11T15:34:23.000Z"
         },
         "d7": {
-          "pct": null,
-          "checks": 0,
-          "since": null
+          "pct": 100,
+          "checks": 1,
+          "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
-          "pct": null,
-          "checks": 0,
-          "since": null
+          "pct": 100,
+          "checks": 1,
+          "since": "2026-11-11T15:34:23.000Z"
         }
       },
-      "info": null,
-      "infoObservedAt": null
+      "info": {
+        "network": "bitcoin",
+        "serverPubkey": "0375b2e4f6abe5b00736359de211c35d9e72b615e5fd424d8ad1e68a8b300b97b5",
+        "mailboxPubkey": "037bb26bfe7a819c2285f4cfdba63e1d806cb37d04915f17447c76140c34cf73a9",
+        "protocol": {
+          "min": 4,
+          "max": 5
+        },
+        "psa": null,
+        "tosLink": "https://second.tech/terms",
+        "roundIntervalSecs": 3600,
+        "nextRoundAt": "2026-11-11T15:56:53.000Z",
+        "vtxoLifetimeBlocks": 4032,
+        "vtxoExitDeltaBlocks": 144,
+        "maxVtxoExitDepth": 100,
+        "minBoardAmountSat": 50000,
+        "maxVtxoAmountSat": 10000000,
+        "requiredBoardConfirmations": 2,
+        "offboardFeeRateSatVkb": 1040,
+        "fees": {
+          "board": {
+            "minFeeSat": 0,
+            "baseFeeSat": 0,
+            "ppm": 0
+          },
+          "offboard": {
+            "baseFeeSat": 0,
+            "fixedAdditionalVb": 389,
+            "ppmByExpiry": [
+              {
+                "expiryBlocksThreshold": 0,
+                "ppm": 2000
+              },
+              {
+                "expiryBlocksThreshold": 1008,
+                "ppm": 4000
+              },
+              {
+                "expiryBlocksThreshold": 2016,
+                "ppm": 5000
+              }
+            ]
+          },
+          "refresh": {
+            "baseFeeSat": 0,
+            "ppmByExpiry": [
+              {
+                "expiryBlocksThreshold": 0,
+                "ppm": 0
+              },
+              {
+                "expiryBlocksThreshold": 288,
+                "ppm": 2000
+              },
+              {
+                "expiryBlocksThreshold": 1008,
+                "ppm": 4000
+              },
+              {
+                "expiryBlocksThreshold": 2016,
+                "ppm": 5000
+              }
+            ]
+          },
+          "lightningReceive": {
+            "baseFeeSat": 0,
+            "ppm": 0
+          },
+          "lightningSend": {
+            "minFeeSat": 20,
+            "baseFeeSat": 0,
+            "ppmByExpiry": [
+              {
+                "expiryBlocksThreshold": 0,
+                "ppm": 2000
+              },
+              {
+                "expiryBlocksThreshold": 1008,
+                "ppm": 4000
+              },
+              {
+                "expiryBlocksThreshold": 2016,
+                "ppm": 5000
+              }
+            ]
+          }
+        }
+      },
+      "infoObservedAt": "2026-11-11T15:34:23.000Z"
     },
     {
       "id": "second-signet",
       "name": "Second (signet)",
       "host": "ark.signet.2nd.dev",
-      "state": "unknown",
-      "lastCheckedAt": null,
-      "lastOnlineAt": null,
-      "latencyMs": null,
+      "state": "online",
+      "lastCheckedAt": "2026-11-11T15:34:23.000Z",
+      "lastOnlineAt": "2026-11-11T15:34:23.000Z",
+      "latencyMs": 563,
       "error": null,
       "uptime": {
         "h24": {
-          "pct": null,
-          "checks": 0,
-          "since": null
+          "pct": 100,
+          "checks": 1,
+          "since": "2026-11-11T15:34:23.000Z"
         },
         "d7": {
-          "pct": null,
-          "checks": 0,
-          "since": null
+          "pct": 100,
+          "checks": 1,
+          "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
-          "pct": null,
-          "checks": 0,
-          "since": null
+          "pct": 100,
+          "checks": 1,
+          "since": "2026-11-11T15:34:23.000Z"
         }
       },
-      "info": null,
-      "infoObservedAt": null
+      "info": {
+        "network": "signet",
+        "serverPubkey": "03244a5a493e5f0c7b2ff513575715c036100ae219e5765ea688eb542a06f85aed",
+        "mailboxPubkey": "03bb15de36c79b3216fb05e5a4ebc3e8d6e9b693efcee8a8bd99872efe15ab22d5",
+        "protocol": {
+          "min": 4,
+          "max": 5
+        },
+        "psa": null,
+        "tosLink": null,
+        "roundIntervalSecs": 300,
+        "nextRoundAt": "2026-11-11T15:35:08.000Z",
+        "vtxoLifetimeBlocks": 144,
+        "vtxoExitDeltaBlocks": 12,
+        "maxVtxoExitDepth": 100,
+        "minBoardAmountSat": 10000,
+        "maxVtxoAmountSat": 100000000,
+        "requiredBoardConfirmations": 1,
+        "offboardFeeRateSatVkb": 100,
+        "fees": {
+          "board": {
+            "minFeeSat": 0,
+            "baseFeeSat": 0,
+            "ppm": 0
+          },
+          "offboard": {
+            "baseFeeSat": 0,
+            "fixedAdditionalVb": 221,
+            "ppmByExpiry": [
+              {
+                "expiryBlocksThreshold": 0,
+                "ppm": 2000
+              },
+              {
+                "expiryBlocksThreshold": 1008,
+                "ppm": 4000
+              },
+              {
+                "expiryBlocksThreshold": 2016,
+                "ppm": 5000
+              }
+            ]
+          },
+          "refresh": {
+            "baseFeeSat": 0,
+            "ppmByExpiry": [
+              {
+                "expiryBlocksThreshold": 0,
+                "ppm": 0
+              },
+              {
+                "expiryBlocksThreshold": 288,
+                "ppm": 2000
+              },
+              {
+                "expiryBlocksThreshold": 1008,
+                "ppm": 4000
+              },
+              {
+                "expiryBlocksThreshold": 2016,
+                "ppm": 5000
+              }
+            ]
+          },
+          "lightningReceive": {
+            "baseFeeSat": 0,
+            "ppm": 0
+          },
+          "lightningSend": {
+            "minFeeSat": 20,
+            "baseFeeSat": 0,
+            "ppmByExpiry": [
+              {
+                "expiryBlocksThreshold": 0,
+                "ppm": 2000
+              },
+              {
+                "expiryBlocksThreshold": 1008,
+                "ppm": 4000
+              },
+              {
+                "expiryBlocksThreshold": 2016,
+                "ppm": 5000
+              }
+            ]
+          }
+        }
+      },
+      "infoObservedAt": "2026-11-11T15:34:23.000Z"
     },
     {
       "id": "coinos",
       "name": "Coinos",
       "host": "ark.coinos.io",
-      "state": "unknown",
-      "lastCheckedAt": null,
-      "lastOnlineAt": null,
-      "latencyMs": null,
+      "state": "online",
+      "lastCheckedAt": "2026-11-11T15:34:23.000Z",
+      "lastOnlineAt": "2026-11-11T15:34:23.000Z",
+      "latencyMs": 192,
       "error": null,
       "uptime": {
         "h24": {
-          "pct": null,
-          "checks": 0,
-          "since": null
+          "pct": 100,
+          "checks": 1,
+          "since": "2026-11-11T15:34:23.000Z"
         },
         "d7": {
-          "pct": null,
-          "checks": 0,
-          "since": null
+          "pct": 100,
+          "checks": 1,
+          "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
-          "pct": null,
-          "checks": 0,
-          "since": null
+          "pct": 100,
+          "checks": 1,
+          "since": "2026-11-11T15:34:23.000Z"
         }
       },
-      "info": null,
-      "infoObservedAt": null
+      "info": {
+        "network": "bitcoin",
+        "serverPubkey": "03ff959f88f41d5f0e3e1717685cbaf408f6568330122e1088ca4307d4d4f73e96",
+        "mailboxPubkey": "038b76c41b30778d8ffd4ac8f8d6dbc020b9b4284601038580e5865d9671468c3d",
+        "protocol": {
+          "min": 4,
+          "max": 5
+        },
+        "psa": null,
+        "tosLink": null,
+        "roundIntervalSecs": 120,
+        "nextRoundAt": "2026-11-11T15:35:20.000Z",
+        "vtxoLifetimeBlocks": 8640,
+        "vtxoExitDeltaBlocks": 144,
+        "maxVtxoExitDepth": 100,
+        "minBoardAmountSat": 1000,
+        "maxVtxoAmountSat": 5000000,
+        "requiredBoardConfirmations": 3,
+        "offboardFeeRateSatVkb": 1100,
+        "fees": {
+          "board": {
+            "minFeeSat": 0,
+            "baseFeeSat": 0,
+            "ppm": 0
+          },
+          "offboard": {
+            "baseFeeSat": 200,
+            "fixedAdditionalVb": 212,
+            "ppmByExpiry": [
+              {
+                "expiryBlocksThreshold": 0,
+                "ppm": 0
+              },
+              {
+                "expiryBlocksThreshold": 97,
+                "ppm": 1000
+              },
+              {
+                "expiryBlocksThreshold": 199,
+                "ppm": 4000
+              },
+              {
+                "expiryBlocksThreshold": 2161,
+                "ppm": 8000
+              }
+            ]
+          },
+          "refresh": {
+            "baseFeeSat": 300,
+            "ppmByExpiry": [
+              {
+                "expiryBlocksThreshold": 0,
+                "ppm": 0
+              },
+              {
+                "expiryBlocksThreshold": 97,
+                "ppm": 250
+              },
+              {
+                "expiryBlocksThreshold": 199,
+                "ppm": 1000
+              },
+              {
+                "expiryBlocksThreshold": 2161,
+                "ppm": 2000
+              }
+            ]
+          },
+          "lightningReceive": {
+            "baseFeeSat": 0,
+            "ppm": 0
+          },
+          "lightningSend": {
+            "minFeeSat": 0,
+            "baseFeeSat": 0,
+            "ppmByExpiry": []
+          }
+        }
+      },
+      "infoObservedAt": "2026-11-11T15:34:23.000Z"
     },
     {
       "id": "zappin",
       "name": "Zappin",
       "host": "ark.zappin.online",
-      "state": "unknown",
-      "lastCheckedAt": null,
-      "lastOnlineAt": null,
-      "latencyMs": null,
+      "state": "online",
+      "lastCheckedAt": "2026-11-11T15:34:23.000Z",
+      "lastOnlineAt": "2026-11-11T15:34:23.000Z",
+      "latencyMs": 667,
       "error": null,
       "uptime": {
         "h24": {
-          "pct": null,
-          "checks": 0,
-          "since": null
+          "pct": 100,
+          "checks": 1,
+          "since": "2026-11-11T15:34:23.000Z"
         },
         "d7": {
-          "pct": null,
-          "checks": 0,
-          "since": null
+          "pct": 100,
+          "checks": 1,
+          "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
-          "pct": null,
-          "checks": 0,
-          "since": null
+          "pct": 100,
+          "checks": 1,
+          "since": "2026-11-11T15:34:23.000Z"
         }
       },
-      "info": null,
-      "infoObservedAt": null
+      "info": {
+        "network": "bitcoin",
+        "serverPubkey": "02062d4dfe60c7e1cefe5a0ebb01e1b827a1d2e32650dc4311431cb9de6107df07",
+        "mailboxPubkey": "0261e90a4a271bbf8f2f43a41b573ad99095bef160a8f1939d13e5b6623f8066b5",
+        "protocol": {
+          "min": 4,
+          "max": 5
+        },
+        "psa": null,
+        "tosLink": null,
+        "roundIntervalSecs": 600,
+        "nextRoundAt": "2026-11-11T15:43:52.000Z",
+        "vtxoLifetimeBlocks": 1008,
+        "vtxoExitDeltaBlocks": 144,
+        "maxVtxoExitDepth": 100,
+        "minBoardAmountSat": 20000,
+        "maxVtxoAmountSat": null,
+        "requiredBoardConfirmations": 3,
+        "offboardFeeRateSatVkb": 2008,
+        "fees": {
+          "board": {
+            "minFeeSat": 330,
+            "baseFeeSat": 100,
+            "ppm": 1000
+          },
+          "offboard": {
+            "baseFeeSat": 200,
+            "fixedAdditionalVb": 221,
+            "ppmByExpiry": [
+              {
+                "expiryBlocksThreshold": 0,
+                "ppm": 0
+              },
+              {
+                "expiryBlocksThreshold": 145,
+                "ppm": 1000
+              },
+              {
+                "expiryBlocksThreshold": 432,
+                "ppm": 4000
+              },
+              {
+                "expiryBlocksThreshold": 1008,
+                "ppm": 8000
+              }
+            ]
+          },
+          "refresh": {
+            "baseFeeSat": 600,
+            "ppmByExpiry": [
+              {
+                "expiryBlocksThreshold": 0,
+                "ppm": 0
+              },
+              {
+                "expiryBlocksThreshold": 145,
+                "ppm": 1000
+              },
+              {
+                "expiryBlocksThreshold": 432,
+                "ppm": 4000
+              },
+              {
+                "expiryBlocksThreshold": 1008,
+                "ppm": 8000
+              }
+            ]
+          },
+          "lightningReceive": {
+            "baseFeeSat": 100,
+            "ppm": 2000
+          },
+          "lightningSend": {
+            "minFeeSat": 10,
+            "baseFeeSat": 75,
+            "ppmByExpiry": [
+              {
+                "expiryBlocksThreshold": 0,
+                "ppm": 0
+              },
+              {
+                "expiryBlocksThreshold": 145,
+                "ppm": 1000
+              },
+              {
+                "expiryBlocksThreshold": 432,
+                "ppm": 4000
+              },
+              {
+                "expiryBlocksThreshold": 1008,
+                "ppm": 8000
+              }
+            ]
+          }
+        }
+      },
+      "infoObservedAt": "2026-11-11T15:34:23.000Z"
     }
   ]
 }
