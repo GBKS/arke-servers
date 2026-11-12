@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-12T03:08:26.000Z",
+  "generatedAt": "2026-11-12T08:11:40.000Z",
   "checkIntervalSecs": 600,
   "servers": [
     {
@@ -8,27 +8,149 @@
       "name": "Second",
       "host": "ark.second.tech",
       "state": "online",
-      "lastCheckedAt": "2026-11-12T03:08:25.000Z",
-      "lastOnlineAt": "2026-11-12T03:08:25.000Z",
-      "latencyMs": 439,
+      "lastCheckedAt": "2026-11-12T08:11:39.000Z",
+      "lastOnlineAt": "2026-11-12T08:11:39.000Z",
+      "latencyMs": 389,
       "error": null,
       "uptime": {
         "h24": {
           "pct": 100,
-          "checks": 3,
+          "checks": 4,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d7": {
           "pct": 100,
-          "checks": 3,
+          "checks": 4,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
           "pct": 100,
-          "checks": 3,
+          "checks": 4,
           "since": "2026-11-11T15:34:23.000Z"
         }
       },
+      "daily": [
+        {
+          "date": "2026-10-14",
+          "pct": null
+        },
+        {
+          "date": "2026-10-15",
+          "pct": null
+        },
+        {
+          "date": "2026-10-16",
+          "pct": null
+        },
+        {
+          "date": "2026-10-17",
+          "pct": null
+        },
+        {
+          "date": "2026-10-18",
+          "pct": null
+        },
+        {
+          "date": "2026-10-19",
+          "pct": null
+        },
+        {
+          "date": "2026-10-20",
+          "pct": null
+        },
+        {
+          "date": "2026-10-21",
+          "pct": null
+        },
+        {
+          "date": "2026-10-22",
+          "pct": null
+        },
+        {
+          "date": "2026-10-23",
+          "pct": null
+        },
+        {
+          "date": "2026-10-24",
+          "pct": null
+        },
+        {
+          "date": "2026-10-25",
+          "pct": null
+        },
+        {
+          "date": "2026-10-26",
+          "pct": null
+        },
+        {
+          "date": "2026-10-27",
+          "pct": null
+        },
+        {
+          "date": "2026-10-28",
+          "pct": null
+        },
+        {
+          "date": "2026-10-29",
+          "pct": null
+        },
+        {
+          "date": "2026-10-30",
+          "pct": null
+        },
+        {
+          "date": "2026-10-31",
+          "pct": null
+        },
+        {
+          "date": "2026-11-01",
+          "pct": null
+        },
+        {
+          "date": "2026-11-02",
+          "pct": null
+        },
+        {
+          "date": "2026-11-03",
+          "pct": null
+        },
+        {
+          "date": "2026-11-04",
+          "pct": null
+        },
+        {
+          "date": "2026-11-05",
+          "pct": null
+        },
+        {
+          "date": "2026-11-06",
+          "pct": null
+        },
+        {
+          "date": "2026-11-07",
+          "pct": null
+        },
+        {
+          "date": "2026-11-08",
+          "pct": null
+        },
+        {
+          "date": "2026-11-09",
+          "pct": null
+        },
+        {
+          "date": "2026-11-10",
+          "pct": null
+        },
+        {
+          "date": "2026-11-11",
+          "pct": 100
+        },
+        {
+          "date": "2026-11-12",
+          "pct": 100
+        }
+      ],
       "info": {
         "network": "bitcoin",
         "serverPubkey": "0375b2e4f6abe5b00736359de211c35d9e72b615e5fd424d8ad1e68a8b300b97b5",
@@ -40,14 +162,14 @@
         "psa": null,
         "tosLink": "https://second.tech/terms",
         "roundIntervalSecs": 3600,
-        "nextRoundAt": "2026-11-12T03:56:53.000Z",
+        "nextRoundAt": "2026-11-12T08:56:53.000Z",
         "vtxoLifetimeBlocks": 4032,
         "vtxoExitDeltaBlocks": 144,
         "maxVtxoExitDepth": 100,
         "minBoardAmountSat": 50000,
         "maxVtxoAmountSat": 10000000,
         "requiredBoardConfirmations": 2,
-        "offboardFeeRateSatVkb": 124,
+        "offboardFeeRateSatVkb": 2000,
         "fees": {
           "board": {
             "minFeeSat": 0,
@@ -117,34 +239,156 @@
           }
         }
       },
-      "infoObservedAt": "2026-11-12T03:08:25.000Z"
+      "infoObservedAt": "2026-11-12T08:11:39.000Z"
     },
     {
       "id": "second-signet",
       "name": "Second (signet)",
       "host": "ark.signet.2nd.dev",
       "state": "online",
-      "lastCheckedAt": "2026-11-12T03:08:25.000Z",
-      "lastOnlineAt": "2026-11-12T03:08:25.000Z",
-      "latencyMs": 444,
+      "lastCheckedAt": "2026-11-12T08:11:39.000Z",
+      "lastOnlineAt": "2026-11-12T08:11:39.000Z",
+      "latencyMs": 446,
       "error": null,
       "uptime": {
         "h24": {
           "pct": 100,
-          "checks": 3,
+          "checks": 4,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d7": {
           "pct": 100,
-          "checks": 3,
+          "checks": 4,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
           "pct": 100,
-          "checks": 3,
+          "checks": 4,
           "since": "2026-11-11T15:34:23.000Z"
         }
       },
+      "daily": [
+        {
+          "date": "2026-10-14",
+          "pct": null
+        },
+        {
+          "date": "2026-10-15",
+          "pct": null
+        },
+        {
+          "date": "2026-10-16",
+          "pct": null
+        },
+        {
+          "date": "2026-10-17",
+          "pct": null
+        },
+        {
+          "date": "2026-10-18",
+          "pct": null
+        },
+        {
+          "date": "2026-10-19",
+          "pct": null
+        },
+        {
+          "date": "2026-10-20",
+          "pct": null
+        },
+        {
+          "date": "2026-10-21",
+          "pct": null
+        },
+        {
+          "date": "2026-10-22",
+          "pct": null
+        },
+        {
+          "date": "2026-10-23",
+          "pct": null
+        },
+        {
+          "date": "2026-10-24",
+          "pct": null
+        },
+        {
+          "date": "2026-10-25",
+          "pct": null
+        },
+        {
+          "date": "2026-10-26",
+          "pct": null
+        },
+        {
+          "date": "2026-10-27",
+          "pct": null
+        },
+        {
+          "date": "2026-10-28",
+          "pct": null
+        },
+        {
+          "date": "2026-10-29",
+          "pct": null
+        },
+        {
+          "date": "2026-10-30",
+          "pct": null
+        },
+        {
+          "date": "2026-10-31",
+          "pct": null
+        },
+        {
+          "date": "2026-11-01",
+          "pct": null
+        },
+        {
+          "date": "2026-11-02",
+          "pct": null
+        },
+        {
+          "date": "2026-11-03",
+          "pct": null
+        },
+        {
+          "date": "2026-11-04",
+          "pct": null
+        },
+        {
+          "date": "2026-11-05",
+          "pct": null
+        },
+        {
+          "date": "2026-11-06",
+          "pct": null
+        },
+        {
+          "date": "2026-11-07",
+          "pct": null
+        },
+        {
+          "date": "2026-11-08",
+          "pct": null
+        },
+        {
+          "date": "2026-11-09",
+          "pct": null
+        },
+        {
+          "date": "2026-11-10",
+          "pct": null
+        },
+        {
+          "date": "2026-11-11",
+          "pct": 100
+        },
+        {
+          "date": "2026-11-12",
+          "pct": 100
+        }
+      ],
       "info": {
         "network": "signet",
         "serverPubkey": "03244a5a493e5f0c7b2ff513575715c036100ae219e5765ea688eb542a06f85aed",
@@ -156,7 +400,7 @@
         "psa": null,
         "tosLink": null,
         "roundIntervalSecs": 300,
-        "nextRoundAt": "2026-11-12T03:10:11.000Z",
+        "nextRoundAt": "2026-11-12T08:15:11.000Z",
         "vtxoLifetimeBlocks": 144,
         "vtxoExitDeltaBlocks": 12,
         "maxVtxoExitDepth": 100,
@@ -233,34 +477,156 @@
           }
         }
       },
-      "infoObservedAt": "2026-11-12T03:08:25.000Z"
+      "infoObservedAt": "2026-11-12T08:11:39.000Z"
     },
     {
       "id": "coinos",
       "name": "Coinos",
       "host": "ark.coinos.io",
       "state": "online",
-      "lastCheckedAt": "2026-11-12T03:08:25.000Z",
-      "lastOnlineAt": "2026-11-12T03:08:25.000Z",
-      "latencyMs": 416,
+      "lastCheckedAt": "2026-11-12T08:11:39.000Z",
+      "lastOnlineAt": "2026-11-12T08:11:39.000Z",
+      "latencyMs": 399,
       "error": null,
       "uptime": {
         "h24": {
           "pct": 100,
-          "checks": 3,
+          "checks": 4,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d7": {
           "pct": 100,
-          "checks": 3,
+          "checks": 4,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
           "pct": 100,
-          "checks": 3,
+          "checks": 4,
           "since": "2026-11-11T15:34:23.000Z"
         }
       },
+      "daily": [
+        {
+          "date": "2026-10-14",
+          "pct": null
+        },
+        {
+          "date": "2026-10-15",
+          "pct": null
+        },
+        {
+          "date": "2026-10-16",
+          "pct": null
+        },
+        {
+          "date": "2026-10-17",
+          "pct": null
+        },
+        {
+          "date": "2026-10-18",
+          "pct": null
+        },
+        {
+          "date": "2026-10-19",
+          "pct": null
+        },
+        {
+          "date": "2026-10-20",
+          "pct": null
+        },
+        {
+          "date": "2026-10-21",
+          "pct": null
+        },
+        {
+          "date": "2026-10-22",
+          "pct": null
+        },
+        {
+          "date": "2026-10-23",
+          "pct": null
+        },
+        {
+          "date": "2026-10-24",
+          "pct": null
+        },
+        {
+          "date": "2026-10-25",
+          "pct": null
+        },
+        {
+          "date": "2026-10-26",
+          "pct": null
+        },
+        {
+          "date": "2026-10-27",
+          "pct": null
+        },
+        {
+          "date": "2026-10-28",
+          "pct": null
+        },
+        {
+          "date": "2026-10-29",
+          "pct": null
+        },
+        {
+          "date": "2026-10-30",
+          "pct": null
+        },
+        {
+          "date": "2026-10-31",
+          "pct": null
+        },
+        {
+          "date": "2026-11-01",
+          "pct": null
+        },
+        {
+          "date": "2026-11-02",
+          "pct": null
+        },
+        {
+          "date": "2026-11-03",
+          "pct": null
+        },
+        {
+          "date": "2026-11-04",
+          "pct": null
+        },
+        {
+          "date": "2026-11-05",
+          "pct": null
+        },
+        {
+          "date": "2026-11-06",
+          "pct": null
+        },
+        {
+          "date": "2026-11-07",
+          "pct": null
+        },
+        {
+          "date": "2026-11-08",
+          "pct": null
+        },
+        {
+          "date": "2026-11-09",
+          "pct": null
+        },
+        {
+          "date": "2026-11-10",
+          "pct": null
+        },
+        {
+          "date": "2026-11-11",
+          "pct": 100
+        },
+        {
+          "date": "2026-11-12",
+          "pct": 100
+        }
+      ],
       "info": {
         "network": "bitcoin",
         "serverPubkey": "03ff959f88f41d5f0e3e1717685cbaf408f6568330122e1088ca4307d4d4f73e96",
@@ -272,14 +638,14 @@
         "psa": null,
         "tosLink": null,
         "roundIntervalSecs": 120,
-        "nextRoundAt": "2026-11-12T03:09:42.000Z",
+        "nextRoundAt": "2026-11-12T08:11:43.000Z",
         "vtxoLifetimeBlocks": 8640,
         "vtxoExitDeltaBlocks": 144,
         "maxVtxoExitDepth": 100,
         "minBoardAmountSat": 1000,
         "maxVtxoAmountSat": 5000000,
         "requiredBoardConfirmations": 3,
-        "offboardFeeRateSatVkb": 124,
+        "offboardFeeRateSatVkb": 1996,
         "fees": {
           "board": {
             "minFeeSat": 0,
@@ -340,34 +706,156 @@
           }
         }
       },
-      "infoObservedAt": "2026-11-12T03:08:25.000Z"
+      "infoObservedAt": "2026-11-12T08:11:39.000Z"
     },
     {
       "id": "zappin",
       "name": "Zappin",
       "host": "ark.zappin.online",
       "state": "online",
-      "lastCheckedAt": "2026-11-12T03:08:25.000Z",
-      "lastOnlineAt": "2026-11-12T03:08:25.000Z",
-      "latencyMs": 605,
+      "lastCheckedAt": "2026-11-12T08:11:39.000Z",
+      "lastOnlineAt": "2026-11-12T08:11:39.000Z",
+      "latencyMs": 466,
       "error": null,
       "uptime": {
         "h24": {
           "pct": 100,
-          "checks": 3,
+          "checks": 4,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d7": {
           "pct": 100,
-          "checks": 3,
+          "checks": 4,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
           "pct": 100,
-          "checks": 3,
+          "checks": 4,
           "since": "2026-11-11T15:34:23.000Z"
         }
       },
+      "daily": [
+        {
+          "date": "2026-10-14",
+          "pct": null
+        },
+        {
+          "date": "2026-10-15",
+          "pct": null
+        },
+        {
+          "date": "2026-10-16",
+          "pct": null
+        },
+        {
+          "date": "2026-10-17",
+          "pct": null
+        },
+        {
+          "date": "2026-10-18",
+          "pct": null
+        },
+        {
+          "date": "2026-10-19",
+          "pct": null
+        },
+        {
+          "date": "2026-10-20",
+          "pct": null
+        },
+        {
+          "date": "2026-10-21",
+          "pct": null
+        },
+        {
+          "date": "2026-10-22",
+          "pct": null
+        },
+        {
+          "date": "2026-10-23",
+          "pct": null
+        },
+        {
+          "date": "2026-10-24",
+          "pct": null
+        },
+        {
+          "date": "2026-10-25",
+          "pct": null
+        },
+        {
+          "date": "2026-10-26",
+          "pct": null
+        },
+        {
+          "date": "2026-10-27",
+          "pct": null
+        },
+        {
+          "date": "2026-10-28",
+          "pct": null
+        },
+        {
+          "date": "2026-10-29",
+          "pct": null
+        },
+        {
+          "date": "2026-10-30",
+          "pct": null
+        },
+        {
+          "date": "2026-10-31",
+          "pct": null
+        },
+        {
+          "date": "2026-11-01",
+          "pct": null
+        },
+        {
+          "date": "2026-11-02",
+          "pct": null
+        },
+        {
+          "date": "2026-11-03",
+          "pct": null
+        },
+        {
+          "date": "2026-11-04",
+          "pct": null
+        },
+        {
+          "date": "2026-11-05",
+          "pct": null
+        },
+        {
+          "date": "2026-11-06",
+          "pct": null
+        },
+        {
+          "date": "2026-11-07",
+          "pct": null
+        },
+        {
+          "date": "2026-11-08",
+          "pct": null
+        },
+        {
+          "date": "2026-11-09",
+          "pct": null
+        },
+        {
+          "date": "2026-11-10",
+          "pct": null
+        },
+        {
+          "date": "2026-11-11",
+          "pct": 100
+        },
+        {
+          "date": "2026-11-12",
+          "pct": 100
+        }
+      ],
       "info": {
         "network": "bitcoin",
         "serverPubkey": "02062d4dfe60c7e1cefe5a0ebb01e1b827a1d2e32650dc4311431cb9de6107df07",
@@ -379,14 +867,14 @@
         "psa": null,
         "tosLink": null,
         "roundIntervalSecs": 600,
-        "nextRoundAt": "2026-11-12T03:13:52.000Z",
+        "nextRoundAt": "2026-11-12T08:13:52.000Z",
         "vtxoLifetimeBlocks": 1008,
         "vtxoExitDeltaBlocks": 144,
         "maxVtxoExitDepth": 100,
         "minBoardAmountSat": 20000,
         "maxVtxoAmountSat": null,
         "requiredBoardConfirmations": 3,
-        "offboardFeeRateSatVkb": 2008,
+        "offboardFeeRateSatVkb": 2004,
         "fees": {
           "board": {
             "minFeeSat": 330,
@@ -464,7 +952,7 @@
           }
         }
       },
-      "infoObservedAt": "2026-11-12T03:08:25.000Z"
+      "infoObservedAt": "2026-11-12T08:11:39.000Z"
     }
   ]
 }
