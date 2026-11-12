@@ -70,3 +70,7 @@
 {"t":1794480613,"id":"second-signet","ok":true,"ms":526}
 {"t":1794480613,"id":"coinos","ok":true,"ms":431}
 {"t":1794480613,"id":"zappin","ok":true,"ms":650}
+{"t":1794481223,"id":"second","ok":true,"ms":522}
+{"t":1794481223,"id":"second-signet","ok":true,"ms":585}
+{"t":1794481223,"id":"coinos","ok":true,"ms":236}
+{"t":1794481223,"id":"zappin","ok":true,"ms":610}
