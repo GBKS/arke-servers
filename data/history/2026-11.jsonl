@@ -390,3 +390,7 @@
 {"t":1794527414,"id":"second-signet","ok":true,"ms":468}
 {"t":1794527414,"id":"coinos","ok":true,"ms":445}
 {"t":1794527414,"id":"zappin","ok":true,"ms":511}
+{"t":1794527907,"id":"second","ok":true,"ms":412}
+{"t":1794527907,"id":"second-signet","ok":true,"ms":502}
+{"t":1794527907,"id":"coinos","ok":true,"ms":336}
+{"t":1794527907,"id":"zappin","ok":true,"ms":538}
