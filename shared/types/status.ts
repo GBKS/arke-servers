@@ -13,6 +13,8 @@ export interface ServerConfig {
   color?: string
   /** Logo path under public/, e.g. /logos/second.svg. Shown on the colour. */
   logo?: string
+  /** Operator's product site, https only. */
+  website?: string
 }
 
 /** One line in data/history/YYYY-MM.jsonl. */

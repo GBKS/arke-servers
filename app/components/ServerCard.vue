@@ -44,6 +44,9 @@ const fees = computed(() => {
   })
 })
 
+const website = computed(() => brandWebsite(s.value.id))
+const websiteLabel = computed(() => website.value?.replace(/^https:\/\/(www\.)?/, '').replace(/\/$/, ''))
+
 const copied = ref(false)
 async function copy() {
   try {
@@ -79,10 +82,13 @@ async function copy() {
     </button>
 
     <div v-show="open" :id="`det-${s.id}`" class="details">
-      <div class="addr">
-        <span>Server address</span>
-        <code>{{ serverUrl(s.host) }}</code>
-        <button type="button" class="copy" :class="{ done: copied }" @click="copy">{{ copied ? 'Copied' : 'Copy' }}</button>
+      <div class="links">
+        <div class="addr">
+          <span>Server address</span>
+          <code>{{ serverUrl(s.host) }}</code>
+          <button type="button" class="copy" :class="{ done: copied }" @click="copy">{{ copied ? 'Copied' : 'Copy' }}</button>
+        </div>
+        <a v-if="website" class="site" :href="website" rel="noopener" target="_blank">{{ websiteLabel }} <span aria-hidden="true">↗</span></a>
       </div>
 
       <p v-if="s.state === 'offline'" class="alert">

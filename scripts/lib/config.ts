@@ -14,7 +14,7 @@ export function parseServers(raw: unknown): ServerConfig[] {
   return raw.map((entry, i) => {
     const where = `servers.json[${i}]`
     if (!entry || typeof entry !== 'object') throw new Error(`${where}: must be an object`)
-    const { id, name, host, color, logo } = entry as Record<string, unknown>
+    const { id, name, host, color, logo, website } = entry as Record<string, unknown>
     if (typeof id !== 'string' || !ID_RE.test(id)) throw new Error(`${where}: invalid id`)
     if (typeof name !== 'string' || !name.trim()) throw new Error(`${where}: missing name`)
     if (typeof host !== 'string' || !HOST_RE.test(host)) throw new Error(`${where}: host must be a bare public hostname`)
@@ -27,8 +27,11 @@ export function parseServers(raw: unknown): ServerConfig[] {
     if (logo !== undefined && (typeof logo !== 'string' || !/^\/logos\/[a-z0-9-]+\.(svg|png)$/.test(logo))) {
       throw new Error(`${where}: logo must be /logos/<name>.svg or .png`)
     }
+    if (website !== undefined && (typeof website !== 'string' || !/^https:\/\/[a-z0-9.-]+\.[a-z]{2,}(\/[^\s"<>]*)?$/.test(website))) {
+      throw new Error(`${where}: website must be an https URL`)
+    }
     if (seen.has(id)) throw new Error(`${where}: duplicate id "${id}"`)
     seen.add(id)
-    return { id, name: name.trim(), host, ...(color ? { color } : {}), ...(logo ? { logo } : {}) }
+    return { id, name: name.trim(), host, ...(color ? { color } : {}), ...(logo ? { logo } : {}), ...(website ? { website } : {}) }
   })
 }

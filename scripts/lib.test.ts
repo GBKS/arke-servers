@@ -76,7 +76,10 @@ test('dailyUptime buckets checks by UTC day, oldest first', () => {
   assert.ok(days.slice(0, -2).every(d => d.pct === null))
 })
 
-test('parseServers validates the optional colour and logo', () => {
+test('parseServers validates the optional colour, logo and website', () => {
+  assert.equal(parseServers([{ id: 'a', name: 'A', host: 'ark.example.com', website: 'https://example.com' }])[0]!.website, 'https://example.com')
+  assert.throws(() => parseServers([{ id: 'a', name: 'A', host: 'ark.example.com', website: 'javascript:alert(1)' }]))
+  assert.throws(() => parseServers([{ id: 'a', name: 'A', host: 'ark.example.com', website: 'http://example.com' }]))
   assert.equal(parseServers([{ id: 'a', name: 'A', host: 'ark.example.com', color: '#AABBCC' }])[0]!.color, '#AABBCC')
   assert.throws(() => parseServers([{ id: 'a', name: 'A', host: 'ark.example.com', color: 'red' }]))
   assert.equal(parseServers([{ id: 'a', name: 'A', host: 'ark.example.com', logo: '/logos/a.svg' }])[0]!.logo, '/logos/a.svg')

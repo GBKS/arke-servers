@@ -1,6 +1,6 @@
 [
-  { "id": "second", "name": "Second", "host": "ark.second.tech", "color": "#F6EDE1", "logo": "/logos/second.png" },
-  { "id": "second-signet", "name": "Second (signet)", "host": "ark.signet.2nd.dev", "color": "#F6EDE1", "logo": "/logos/second.png" },
-  { "id": "coinos", "name": "Coinos", "host": "ark.coinos.io", "color": "#8FBFFF", "logo": "/logos/coinos.svg" },
-  { "id": "zappin", "name": "Zappin", "host": "ark.zappin.online", "color": "#4DC8DC", "logo": "/logos/zappin.svg" }
+  {"id": "second", "name": "Second", "host": "ark.second.tech", "color": "#F6EDE1", "logo": "/logos/second.png", "website": "https://second.tech"},
+  {"id": "second-signet", "name": "Second (signet)", "host": "ark.signet.2nd.dev", "color": "#F6EDE1", "logo": "/logos/second.png", "website": "https://second.tech"},
+  {"id": "coinos", "name": "Coinos", "host": "ark.coinos.io", "color": "#8FBFFF", "logo": "/logos/coinos.svg", "website": "https://coinos.io"},
+  {"id": "zappin", "name": "Zappin", "host": "ark.zappin.online", "color": "#4DC8DC", "logo": "/logos/zappin.svg", "website": "https://zappin.online"}
 ]
