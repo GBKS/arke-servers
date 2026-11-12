@@ -5,7 +5,7 @@ import { parseServers } from './lib/config'
 import { parseFrames } from './lib/grpcweb'
 import { monthsBetween, parseLines } from './lib/history'
 import { cleanPsa, normalizeInfo, toHex } from './lib/normalize'
-import { buildStatus, serverStatus, uptime } from './lib/status'
+import { buildStatus, dailyUptime, serverStatus, uptime } from './lib/status'
 
 const DAY = 86400
 const NOW = 1_800_000_000
@@ -58,6 +58,29 @@ test('uptime counts only checks inside the window', () => {
   assert.deepEqual(uptime(recs, NOW, DAY), { pct: 66.67, checks: 3, since: new Date((NOW - 600) * 1000).toISOString() })
   assert.equal(uptime(recs, NOW, 7 * DAY).pct, 50)
   assert.deepEqual(uptime([], NOW, DAY), { pct: null, checks: 0, since: null })
+})
+
+test('dailyUptime buckets checks by UTC day, oldest first', () => {
+  const today = Math.floor(NOW / DAY) * DAY
+  const recs: CheckRecord[] = [
+    { t: today + 60, id: 'a', ok: true },
+    { t: today + 120, id: 'a', ok: false },
+    { t: today - 60, id: 'a', ok: true },
+    { t: today - 40 * DAY, id: 'a', ok: false },
+  ]
+  const days = dailyUptime(recs, NOW, 30)
+  assert.equal(days.length, 30)
+  assert.equal(days.at(-1)!.date, new Date(today * 1000).toISOString().slice(0, 10))
+  assert.equal(days.at(-1)!.pct, 50)
+  assert.equal(days.at(-2)!.pct, 100)
+  assert.ok(days.slice(0, -2).every(d => d.pct === null))
+})
+
+test('parseServers validates the optional colour and logo', () => {
+  assert.equal(parseServers([{ id: 'a', name: 'A', host: 'ark.example.com', color: '#AABBCC' }])[0]!.color, '#AABBCC')
+  assert.throws(() => parseServers([{ id: 'a', name: 'A', host: 'ark.example.com', color: 'red' }]))
+  assert.equal(parseServers([{ id: 'a', name: 'A', host: 'ark.example.com', logo: '/logos/a.svg' }])[0]!.logo, '/logos/a.svg')
+  assert.throws(() => parseServers([{ id: 'a', name: 'A', host: 'ark.example.com', logo: 'https://evil.example/a.svg' }]))
 })
 
 test('serverStatus distinguishes unknown, online and offline', () => {

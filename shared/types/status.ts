@@ -9,6 +9,10 @@ export interface ServerConfig {
   id: string
   name: string
   host: string
+  /** Logo background colour on the site, as #rrggbb. */
+  color?: string
+  /** Logo path under public/, e.g. /logos/second.svg. Shown on the colour. */
+  logo?: string
 }
 
 /** One line in data/history/YYYY-MM.jsonl. */
@@ -30,6 +34,13 @@ export interface UptimeWindow {
   checks: number
   /** Timestamp of the oldest check in the window. Later than the window start while tracking is new. */
   since: string | null
+}
+
+export interface DayUptime {
+  /** UTC day, YYYY-MM-DD. The last entry is today, so far. */
+  date: string
+  /** Percentage of successful checks that day, or null with no checks. */
+  pct: number | null
 }
 
 export interface PpmByExpiry {
@@ -76,6 +87,8 @@ export interface ServerStatus {
   latencyMs: number | null
   error: string | null
   uptime: { h24: UptimeWindow; d7: UptimeWindow; d30: UptimeWindow }
+  /** Uptime per UTC day for the last 30 days, oldest first. */
+  daily: DayUptime[]
   /** Last successfully retrieved info. May be older than lastCheckedAt when offline. */
   info: ServerInfo | null
   infoObservedAt: string | null

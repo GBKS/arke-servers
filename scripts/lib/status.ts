@@ -1,6 +1,7 @@
 import {
   STATUS_VERSION,
   type CheckRecord,
+  type DayUptime,
   type ServerConfig,
   type ServerInfo,
   type ServerStatus,
@@ -29,6 +30,24 @@ export function uptime(records: CheckRecord[], nowSecs: number, windowSecs: numb
     checks,
     since: iso(since),
   }
+}
+
+/** Uptime per UTC day, oldest first, ending with today (so far). */
+export function dailyUptime(records: CheckRecord[], nowSecs: number, days = 30): DayUptime[] {
+  const today = Math.floor(nowSecs / DAY)
+  const first = today - days + 1
+  const ok = new Array<number>(days).fill(0)
+  const all = new Array<number>(days).fill(0)
+  for (const r of records) {
+    const d = Math.floor(r.t / DAY) - first
+    if (d < 0 || d >= days || r.t > nowSecs) continue
+    all[d]!++
+    if (r.ok) ok[d]!++
+  }
+  return all.map((n, d) => ({
+    date: new Date((first + d) * DAY * 1000).toISOString().slice(0, 10),
+    pct: n ? Math.round((ok[d]! / n) * 10000) / 100 : null,
+  }))
 }
 
 export interface FreshInfo {
@@ -69,6 +88,7 @@ export function serverStatus(
       d7: uptime(sorted, nowSecs, 7 * DAY),
       d30: uptime(sorted, nowSecs, 30 * DAY),
     },
+    daily: dailyUptime(sorted, nowSecs),
     info: fresh?.info ?? carried?.info ?? null,
     infoObservedAt: fresh ? iso(fresh.observedAt) : (carried?.infoObservedAt ?? null),
   }

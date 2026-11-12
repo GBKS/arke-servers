@@ -6,7 +6,7 @@ advertises. Live at [servers.arke.cash](https://servers.arke.cash).
 
 ## How it works
 
-- `servers.json` is the curated list of servers. To add one, open a pull request.
+- `servers.json` is the curated list of servers (id, name, host, and an optional logo `color` and `logo` file in `public/logos/`). To add one, open a pull request.
 - `scripts/probe.ts` runs every 10 minutes in GitHub Actions. For each server it calls,
   over gRPC-Web on port 443:
   - the standard gRPC health check (`grpc.health.v1.Health/Check`), which decides online/offline
