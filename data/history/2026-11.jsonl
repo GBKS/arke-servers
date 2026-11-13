@@ -950,3 +950,7 @@
 {"t":1794609016,"id":"second-signet","ok":true,"ms":587}
 {"t":1794609016,"id":"coinos","ok":true,"ms":360}
 {"t":1794609016,"id":"zappin","ok":true,"ms":681}
+{"t":1794609619,"id":"second","ok":true,"ms":525}
+{"t":1794609619,"id":"second-signet","ok":true,"ms":509}
+{"t":1794609619,"id":"coinos","ok":true,"ms":404}
+{"t":1794609619,"id":"zappin","ok":true,"ms":558}
