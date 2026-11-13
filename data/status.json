@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-13T03:00:16.000Z",
+  "generatedAt": "2026-11-13T03:10:23.000Z",
   "checkIntervalSecs": 600,
   "servers": [
     {
@@ -8,24 +8,24 @@
       "name": "Second",
       "host": "ark.second.tech",
       "state": "online",
-      "lastCheckedAt": "2026-11-13T03:00:15.000Z",
-      "lastOnlineAt": "2026-11-13T03:00:15.000Z",
-      "latencyMs": 502,
+      "lastCheckedAt": "2026-11-13T03:10:22.000Z",
+      "lastOnlineAt": "2026-11-13T03:10:22.000Z",
+      "latencyMs": 425,
       "error": null,
       "uptime": {
         "h24": {
           "pct": 100,
           "checks": 116,
-          "since": "2026-11-12T03:08:25.000Z"
+          "since": "2026-11-12T08:11:39.000Z"
         },
         "d7": {
           "pct": 100,
-          "checks": 118,
+          "checks": 119,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
           "pct": 100,
-          "checks": 118,
+          "checks": 119,
           "since": "2026-11-11T15:34:23.000Z"
         }
       },
@@ -239,31 +239,31 @@
           }
         }
       },
-      "infoObservedAt": "2026-11-13T03:00:15.000Z"
+      "infoObservedAt": "2026-11-13T03:10:22.000Z"
     },
     {
       "id": "second-signet",
       "name": "Second (signet)",
       "host": "ark.signet.2nd.dev",
       "state": "online",
-      "lastCheckedAt": "2026-11-13T03:00:15.000Z",
-      "lastOnlineAt": "2026-11-13T03:00:15.000Z",
-      "latencyMs": 743,
+      "lastCheckedAt": "2026-11-13T03:10:22.000Z",
+      "lastOnlineAt": "2026-11-13T03:10:22.000Z",
+      "latencyMs": 415,
       "error": null,
       "uptime": {
         "h24": {
           "pct": 100,
           "checks": 116,
-          "since": "2026-11-12T03:08:25.000Z"
+          "since": "2026-11-12T08:11:39.000Z"
         },
         "d7": {
           "pct": 100,
-          "checks": 118,
+          "checks": 119,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
           "pct": 100,
-          "checks": 118,
+          "checks": 119,
           "since": "2026-11-11T15:34:23.000Z"
         }
       },
@@ -400,7 +400,7 @@
         "psa": null,
         "tosLink": null,
         "roundIntervalSecs": 300,
-        "nextRoundAt": "2026-11-13T03:05:16.000Z",
+        "nextRoundAt": "2026-11-13T03:15:16.000Z",
         "vtxoLifetimeBlocks": 144,
         "vtxoExitDeltaBlocks": 12,
         "maxVtxoExitDepth": 100,
@@ -477,31 +477,31 @@
           }
         }
       },
-      "infoObservedAt": "2026-11-13T03:00:15.000Z"
+      "infoObservedAt": "2026-11-13T03:10:22.000Z"
     },
     {
       "id": "coinos",
       "name": "Coinos",
       "host": "ark.coinos.io",
       "state": "online",
-      "lastCheckedAt": "2026-11-13T03:00:15.000Z",
-      "lastOnlineAt": "2026-11-13T03:00:15.000Z",
-      "latencyMs": 194,
+      "lastCheckedAt": "2026-11-13T03:10:22.000Z",
+      "lastOnlineAt": "2026-11-13T03:10:22.000Z",
+      "latencyMs": 607,
       "error": null,
       "uptime": {
         "h24": {
           "pct": 100,
           "checks": 116,
-          "since": "2026-11-12T03:08:25.000Z"
+          "since": "2026-11-12T08:11:39.000Z"
         },
         "d7": {
           "pct": 100,
-          "checks": 118,
+          "checks": 119,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
           "pct": 100,
-          "checks": 118,
+          "checks": 119,
           "since": "2026-11-11T15:34:23.000Z"
         }
       },
@@ -638,7 +638,7 @@
         "psa": null,
         "tosLink": null,
         "roundIntervalSecs": 120,
-        "nextRoundAt": "2026-11-13T03:01:43.000Z",
+        "nextRoundAt": "2026-11-13T03:11:43.000Z",
         "vtxoLifetimeBlocks": 8640,
         "vtxoExitDeltaBlocks": 144,
         "maxVtxoExitDepth": 100,
@@ -706,31 +706,31 @@
           }
         }
       },
-      "infoObservedAt": "2026-11-13T03:00:15.000Z"
+      "infoObservedAt": "2026-11-13T03:10:22.000Z"
     },
     {
       "id": "zappin",
       "name": "Zappin",
       "host": "ark.zappin.online",
       "state": "online",
-      "lastCheckedAt": "2026-11-13T03:00:15.000Z",
-      "lastOnlineAt": "2026-11-13T03:00:15.000Z",
-      "latencyMs": 828,
+      "lastCheckedAt": "2026-11-13T03:10:22.000Z",
+      "lastOnlineAt": "2026-11-13T03:10:22.000Z",
+      "latencyMs": 463,
       "error": null,
       "uptime": {
         "h24": {
           "pct": 100,
           "checks": 116,
-          "since": "2026-11-12T03:08:25.000Z"
+          "since": "2026-11-12T08:11:39.000Z"
         },
         "d7": {
           "pct": 100,
-          "checks": 118,
+          "checks": 119,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
           "pct": 100,
-          "checks": 118,
+          "checks": 119,
           "since": "2026-11-11T15:34:23.000Z"
         }
       },
@@ -867,7 +867,7 @@
         "psa": null,
         "tosLink": null,
         "roundIntervalSecs": 600,
-        "nextRoundAt": "2026-11-13T03:03:52.000Z",
+        "nextRoundAt": "2026-11-13T03:13:52.000Z",
         "vtxoLifetimeBlocks": 1008,
         "vtxoExitDeltaBlocks": 144,
         "maxVtxoExitDepth": 100,
@@ -952,7 +952,7 @@
           }
         }
       },
-      "infoObservedAt": "2026-11-13T03:00:15.000Z"
+      "infoObservedAt": "2026-11-13T03:10:22.000Z"
     }
   ]
 }
