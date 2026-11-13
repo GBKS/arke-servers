@@ -706,3 +706,7 @@
 {"t":1794573618,"id":"second-signet","ok":true,"ms":439}
 {"t":1794573618,"id":"coinos","ok":true,"ms":560}
 {"t":1794573618,"id":"zappin","ok":true,"ms":500}
+{"t":1794574216,"id":"second","ok":true,"ms":423}
+{"t":1794574216,"id":"second-signet","ok":true,"ms":453}
+{"t":1794574216,"id":"coinos","ok":true,"ms":376}
+{"t":1794574216,"id":"zappin","ok":true,"ms":527}
