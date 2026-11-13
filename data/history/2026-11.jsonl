@@ -566,3 +566,7 @@
 {"t":1794552613,"id":"second-signet","ok":true,"ms":484}
 {"t":1794552613,"id":"coinos","ok":true,"ms":445}
 {"t":1794552613,"id":"zappin","ok":true,"ms":630}
+{"t":1794553218,"id":"second","ok":true,"ms":536}
+{"t":1794553218,"id":"second-signet","ok":true,"ms":624}
+{"t":1794553218,"id":"coinos","ok":true,"ms":312}
+{"t":1794553218,"id":"zappin","ok":true,"ms":852}
