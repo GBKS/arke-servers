@@ -1226,3 +1226,7 @@
 {"t":1794649214,"id":"second-signet","ok":false,"e":"HTTP 503"}
 {"t":1794649214,"id":"coinos","ok":true,"ms":416}
 {"t":1794649214,"id":"zappin","ok":true,"ms":564}
+{"t":1794649816,"id":"second","ok":true,"ms":491}
+{"t":1794649816,"id":"second-signet","ok":false,"e":"HTTP 503"}
+{"t":1794649816,"id":"coinos","ok":true,"ms":506}
+{"t":1794649816,"id":"zappin","ok":true,"ms":649}
