@@ -68,8 +68,11 @@ jobs:
           # 200.html and 404.html are identical, so the CLI uploads the same
           # blob twice in parallel and Netlify sometimes rejects the second
           # with "422 no records matched". A fresh deploy usually succeeds.
+          # netlify-cli is a pinned devDependency so its dependency tree comes
+          # from package-lock.json; resolving it fresh via `npx pkg@ver` broke
+          # deploys whenever an upstream package was mid-release.
           for i in 1 2 3; do
-            npx --yes netlify-cli@27.17.0 deploy --prod --no-build --dir .output/public --message "Status $(date -u +%FT%TZ)" && exit 0
+            npx --no-install netlify deploy --prod --no-build --dir .output/public --message "Status $(date -u +%FT%TZ)" && exit 0
             echo "Deploy attempt $i failed, retrying..."
             sleep 10
           done

@@ -17,6 +17,7 @@
     "vue-router": "^5.5.0"
   },
   "devDependencies": {
+    "netlify-cli": "27.17.0",
     "protobufjs": "^8.8.1",
     "tsx": "^4.23.15"
   }
