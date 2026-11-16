@@ -2374,3 +2374,7 @@
 {"t":1794816014,"id":"second-signet","ok":true,"ms":521}
 {"t":1794816014,"id":"coinos","ok":false,"e":"HTTP 502"}
 {"t":1794816014,"id":"zappin","ok":true,"ms":587}
+{"t":1794816622,"id":"second","ok":true,"ms":882}
+{"t":1794816622,"id":"second-signet","ok":true,"ms":843}
+{"t":1794816622,"id":"coinos","ok":true,"ms":987}
+{"t":1794816622,"id":"zappin","ok":true,"ms":1101}
