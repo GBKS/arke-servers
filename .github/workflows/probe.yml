@@ -45,9 +45,11 @@ jobs:
           git add data
           if git diff --cached --quiet; then exit 0; fi
           git commit -q -m 'Update server status'
-          for i in 1 2 3; do
+          # GitHub occasionally returns a transient 403 to the Actions token,
+          # so back off long enough to ride out a short outage.
+          for delay in 10 30 60 0; do
             git pull -q --rebase && git push -q && exit 0
-            sleep 5
+            [ "$delay" -gt 0 ] && echo "Push failed, retrying in ${delay}s..." && sleep "$delay"
           done
           exit 1
 
