@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-16T16:30:18.000Z",
+  "generatedAt": "2026-11-16T16:40:24.000Z",
   "checkIntervalSecs": 600,
   "servers": [
     {
@@ -8,24 +8,24 @@
       "name": "Second",
       "host": "ark.second.tech",
       "state": "online",
-      "lastCheckedAt": "2026-11-16T16:30:17.000Z",
-      "lastOnlineAt": "2026-11-16T16:30:17.000Z",
-      "latencyMs": 477,
+      "lastCheckedAt": "2026-11-16T16:40:23.000Z",
+      "lastOnlineAt": "2026-11-16T16:40:23.000Z",
+      "latencyMs": 308,
       "error": null,
       "uptime": {
         "h24": {
           "pct": 100,
-          "checks": 150,
-          "since": "2026-11-15T16:30:19.000Z"
+          "checks": 149,
+          "since": "2026-11-15T16:50:12.000Z"
         },
         "d7": {
           "pct": 100,
-          "checks": 646,
+          "checks": 647,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
           "pct": 100,
-          "checks": 646,
+          "checks": 647,
           "since": "2026-11-11T15:34:23.000Z"
         }
       },
@@ -169,7 +169,7 @@
         "minBoardAmountSat": 50000,
         "maxVtxoAmountSat": 10000000,
         "requiredBoardConfirmations": 2,
-        "offboardFeeRateSatVkb": 124,
+        "offboardFeeRateSatVkb": 1196,
         "fees": {
           "board": {
             "minFeeSat": 0,
@@ -239,31 +239,31 @@
           }
         }
       },
-      "infoObservedAt": "2026-11-16T16:30:17.000Z"
+      "infoObservedAt": "2026-11-16T16:40:23.000Z"
     },
     {
       "id": "second-signet",
       "name": "Second (signet)",
       "host": "ark.signet.2nd.dev",
       "state": "online",
-      "lastCheckedAt": "2026-11-16T16:30:17.000Z",
-      "lastOnlineAt": "2026-11-16T16:30:17.000Z",
-      "latencyMs": 554,
+      "lastCheckedAt": "2026-11-16T16:40:23.000Z",
+      "lastOnlineAt": "2026-11-16T16:40:23.000Z",
+      "latencyMs": 301,
       "error": null,
       "uptime": {
         "h24": {
           "pct": 100,
-          "checks": 150,
-          "since": "2026-11-15T16:30:19.000Z"
+          "checks": 149,
+          "since": "2026-11-15T16:50:12.000Z"
         },
         "d7": {
           "pct": 94.74,
-          "checks": 646,
+          "checks": 647,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
           "pct": 94.74,
-          "checks": 646,
+          "checks": 647,
           "since": "2026-11-11T15:34:23.000Z"
         }
       },
@@ -400,7 +400,7 @@
         "psa": null,
         "tosLink": null,
         "roundIntervalSecs": 300,
-        "nextRoundAt": "2026-11-16T16:33:17.000Z",
+        "nextRoundAt": "2026-11-16T16:43:17.000Z",
         "vtxoLifetimeBlocks": 144,
         "vtxoExitDeltaBlocks": 12,
         "maxVtxoExitDepth": 100,
@@ -477,31 +477,31 @@
           }
         }
       },
-      "infoObservedAt": "2026-11-16T16:30:17.000Z"
+      "infoObservedAt": "2026-11-16T16:40:23.000Z"
     },
     {
       "id": "coinos",
       "name": "Coinos",
       "host": "ark.coinos.io",
       "state": "online",
-      "lastCheckedAt": "2026-11-16T16:30:17.000Z",
-      "lastOnlineAt": "2026-11-16T16:30:17.000Z",
-      "latencyMs": 568,
+      "lastCheckedAt": "2026-11-16T16:40:23.000Z",
+      "lastOnlineAt": "2026-11-16T16:40:23.000Z",
+      "latencyMs": 347,
       "error": null,
       "uptime": {
         "h24": {
           "pct": 99.33,
-          "checks": 150,
-          "since": "2026-11-15T16:30:19.000Z"
+          "checks": 149,
+          "since": "2026-11-15T16:50:12.000Z"
         },
         "d7": {
           "pct": 99.85,
-          "checks": 646,
+          "checks": 647,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
           "pct": 99.85,
-          "checks": 646,
+          "checks": 647,
           "since": "2026-11-11T15:34:23.000Z"
         }
       },
@@ -624,7 +624,7 @@
         },
         {
           "date": "2026-11-16",
-          "pct": 99.02
+          "pct": 99.03
         }
       ],
       "info": {
@@ -638,14 +638,14 @@
         "psa": null,
         "tosLink": null,
         "roundIntervalSecs": 120,
-        "nextRoundAt": "2026-11-16T16:31:46.000Z",
+        "nextRoundAt": "2026-11-16T16:41:46.000Z",
         "vtxoLifetimeBlocks": 8640,
         "vtxoExitDeltaBlocks": 144,
         "maxVtxoExitDepth": 100,
         "minBoardAmountSat": 1000,
         "maxVtxoAmountSat": 5000000,
         "requiredBoardConfirmations": 3,
-        "offboardFeeRateSatVkb": 124,
+        "offboardFeeRateSatVkb": 1196,
         "fees": {
           "board": {
             "minFeeSat": 0,
@@ -706,31 +706,31 @@
           }
         }
       },
-      "infoObservedAt": "2026-11-16T16:30:17.000Z"
+      "infoObservedAt": "2026-11-16T16:40:23.000Z"
     },
     {
       "id": "zappin",
       "name": "Zappin",
       "host": "ark.zappin.online",
       "state": "online",
-      "lastCheckedAt": "2026-11-16T16:30:17.000Z",
-      "lastOnlineAt": "2026-11-16T16:30:17.000Z",
-      "latencyMs": 649,
+      "lastCheckedAt": "2026-11-16T16:40:23.000Z",
+      "lastOnlineAt": "2026-11-16T16:40:23.000Z",
+      "latencyMs": 414,
       "error": null,
       "uptime": {
         "h24": {
           "pct": 100,
-          "checks": 150,
-          "since": "2026-11-15T16:30:19.000Z"
+          "checks": 149,
+          "since": "2026-11-15T16:50:12.000Z"
         },
         "d7": {
           "pct": 100,
-          "checks": 646,
+          "checks": 647,
           "since": "2026-11-11T15:34:23.000Z"
         },
         "d30": {
           "pct": 100,
-          "checks": 646,
+          "checks": 647,
           "since": "2026-11-11T15:34:23.000Z"
         }
       },
@@ -867,7 +867,7 @@
         "psa": null,
         "tosLink": null,
         "roundIntervalSecs": 600,
-        "nextRoundAt": "2026-11-16T16:34:38.000Z",
+        "nextRoundAt": "2026-11-16T16:44:38.000Z",
         "vtxoLifetimeBlocks": 1008,
         "vtxoExitDeltaBlocks": 144,
         "maxVtxoExitDepth": 100,
@@ -952,7 +952,7 @@
           }
         }
       },
-      "infoObservedAt": "2026-11-16T16:30:17.000Z"
+      "infoObservedAt": "2026-11-16T16:40:23.000Z"
     }
   ]
 }
