@@ -3190,3 +3190,7 @@
 {"t":1794936618,"id":"second-signet","ok":false,"e":"HTTP 503"}
 {"t":1794936618,"id":"coinos","ok":true,"ms":468}
 {"t":1794936618,"id":"zappin","ok":true,"ms":572}
+{"t":1794937217,"id":"second","ok":true,"ms":481}
+{"t":1794937217,"id":"second-signet","ok":false,"e":"HTTP 503"}
+{"t":1794937217,"id":"coinos","ok":true,"ms":418}
+{"t":1794937217,"id":"zappin","ok":true,"ms":589}
