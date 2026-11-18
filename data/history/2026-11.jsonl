@@ -3530,3 +3530,7 @@
 {"t":1794986416,"id":"second-signet","ok":true,"ms":408}
 {"t":1794986416,"id":"coinos","ok":true,"ms":502}
 {"t":1794986416,"id":"zappin","ok":true,"ms":554}
+{"t":1794987018,"id":"second","ok":false,"e":"timeout after 10000ms"}
+{"t":1794987018,"id":"second-signet","ok":true,"ms":384}
+{"t":1794987018,"id":"coinos","ok":true,"ms":375}
+{"t":1794987018,"id":"zappin","ok":true,"ms":448}
