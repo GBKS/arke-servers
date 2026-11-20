@@ -5070,3 +5070,7 @@
 {"t":1795211426,"id":"second-signet","ok":true,"ms":430}
 {"t":1795211426,"id":"coinos","ok":true,"ms":394}
 {"t":1795211426,"id":"zappin","ok":true,"ms":535}
+{"t":1795212030,"id":"second","ok":true,"ms":381}
+{"t":1795212030,"id":"second-signet","ok":true,"ms":370}
+{"t":1795212030,"id":"coinos","ok":true,"ms":418}
+{"t":1795212030,"id":"zappin","ok":true,"ms":516}
