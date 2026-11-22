@@ -6018,3 +6018,7 @@
 {"t":1795350625,"id":"second-signet","ok":true,"ms":452}
 {"t":1795350625,"id":"coinos","ok":true,"ms":249}
 {"t":1795350625,"id":"zappin","ok":true,"ms":546}
+{"t":1795351228,"id":"second","ok":true,"ms":510}
+{"t":1795351228,"id":"second-signet","ok":true,"ms":519}
+{"t":1795351228,"id":"coinos","ok":false,"e":"HTTP 502"}
+{"t":1795351228,"id":"zappin","ok":true,"ms":595}
