@@ -6022,3 +6022,7 @@
 {"t":1795351228,"id":"second-signet","ok":true,"ms":519}
 {"t":1795351228,"id":"coinos","ok":false,"e":"HTTP 502"}
 {"t":1795351228,"id":"zappin","ok":true,"ms":595}
+{"t":1795351831,"id":"second","ok":true,"ms":556}
+{"t":1795351831,"id":"second-signet","ok":true,"ms":547}
+{"t":1795351831,"id":"coinos","ok":true,"ms":236}
+{"t":1795351831,"id":"zappin","ok":true,"ms":624}
