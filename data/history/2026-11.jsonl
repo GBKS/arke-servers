@@ -8990,3 +8990,7 @@
 {"t":1795789830,"id":"second-signet","ok":true,"ms":591}
 {"t":1795789830,"id":"coinos","ok":true,"ms":256}
 {"t":1795789830,"id":"zappin","ok":true,"ms":672}
+{"t":1795790428,"id":"second","ok":true,"ms":396}
+{"t":1795790428,"id":"second-signet","ok":true,"ms":413}
+{"t":1795790428,"id":"coinos","ok":true,"ms":450}
+{"t":1795790428,"id":"zappin","ok":true,"ms":573}
